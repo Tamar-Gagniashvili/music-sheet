@@ -42,7 +42,7 @@ class SheetController extends Controller
      */
     public function store(StoreSheetRequest $request)
     {
-        // return view('sheet.index');
+        //
 
     }
 

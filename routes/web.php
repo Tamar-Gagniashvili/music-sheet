@@ -1,6 +1,10 @@
 <?php
 
 use App\Http\Controllers\SheetController;
+use App\Http\Livewire\AddSheet;
+use App\Http\Livewire\EditSheet;
+use App\Http\Livewire\SheetIndex;
+use App\Models\Sheet;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,10 +19,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', [SheetController::class, 'index'])->name('sheet.index');
+Route::get('/', SheetIndex::class)->name('sheet.index');
 Route::get('/sheets/{sheet}', [SheetController::class, 'show'])->name('sheet.show');
 
-Route::get('/add', [SheetController::class, 'create'])->name('create.sheet');
-Route::post('/add', [SheetController::class, 'store'])->name('store.sheet');
+Route::get('/add', AddSheet::class)->name('create.sheet');
+Route::get('/edit', EditSheet::class)->name('edit.sheet');
+
 
 require __DIR__.'/auth.php';

@@ -47,7 +47,9 @@
                                 <a href="{{route('create.sheet')}}" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-blue-500 hover:text-white">
                                   Add Sheet
                                 </a>
-                                <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-blue-500 hover:text-white">
+                                <a 
+                                    href="{{route('edit.sheet')}}"
+                                    class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-blue-500 hover:text-white">
                                   Edit Sheet
                                 </a>
                             </x-dropdown-link>

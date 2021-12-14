@@ -7,6 +7,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/.min.js" defer></script>
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
@@ -14,7 +15,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <livewire:styles />
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
@@ -44,5 +45,6 @@
                 {{ $slot }}
             </main>
         </div>
+    <livewire:scripts />
     </body>
 </html>

@@ -20,6 +20,7 @@ class SheetFactory extends Factory
             'category_id' => $this->faker->numberBetween(1, 4),
             'title' => ucwords($this->faker->words(4, true)),
             'description' => $this->faker->paragraph(5),
+            'thumbnail'=>'images/sheet.jpg',
         ];
     }
 }
